@@ -67,12 +67,10 @@ Singular fits (random-effect variance collapsing to
 zero) were detected in two Grade 3 cells (-iN APU,
 -osM PU) and five Grade 6 cells (-iF APU, -iF PU,
 -isM APU, -maN APU, -oN PU). They are probably due to the
-smaller sample sizes of the child groups. These are flagged
+smaller sample sizes of the child groups. These are reported
 in the `singular` column of the corresponding output files.
-In these cells the standard error of the fixed-effect
-intercept may be slightly *underestimated*; results should
-be interpreted with appropriate caution. No singular fits
-were detected for adults.
+In these cells results should be interpreted with appropriate 
+caution. No singular fits were detected for adults.
 
 ## Relationship between the Python and R GLMER analyses
 
