@@ -19,65 +19,64 @@ This folder contains all data, scripts, and output files supporting the statisti
 
 ```
 Supplementary_materials/
-│
-├── README.md                              ← this file
-├── Experimental_results.xlsx              ← raw experimental data (all groups)
-│
-├── ├── Hypothesis_testing_results/            ← ICC-adjusted proportion tests
-│   ├── Adults_tests_with_ICC_FORMULAS_Wilson.xlsx
-│   ├── Grade2_tests_with_ICC_FORMULAS_Wilson.xlsx
-│   ├── Grade3_tests_with_ICC_FORMULAS_Wilson.xlsx
-│   ├── Grade4_tests_with_ICC_FORMULAS_Wilson.xlsx
-│   ├── Grade5_tests_with_ICC_FORMULAS_Wilson.xlsx
-│   └── Grade6_tests_with_ICC_FORMULAS_Wilson.xlsx
-│
-├── GLMER/                                 ← Bayesian and frequentist GLMER
-│   ├── ReadMe_GLMER.txt                   ← detailed README for this folder
-│   ├── glmer_Py/                          ← Bayesian GLMM (Python/statsmodels)
-│   │   ├── GLM_Bayesian.ipynb
-│   │   ├── GLM_Bayesian_Figures.ipynb
-│   │   ├── GLM_Bayesian_Figures.R
-│   │   ├── GLM_Adults_intercept_probabilities.xlsx
-│   │   ├── GLM_GradeC_intercept_probabilities.xlsx
-│   │   ├── GLM_GradeF_intercept_probabilities.xlsx
-│   │   ├── ForSimulation_Adults_With_Tokens.xlsx
-│   │   ├── ForSimulation_Grade3_with_Tokens.xlsx
-│   │   ├── ForSimulation_Grade6_with_Tokens.xlsx
-│   │   ├── data_adults_glmer_dummies.xlsx
-│   │   ├── data_children_grade3_glmer_dummies.xlsx
-│   │   └── data_children_grade6_glmer_dummies.xlsx
-│   └── glmer_R/                           ← Frequentist GLMER (R/lme4)
-│       ├── GLMER.R
-│       ├── GLMER_Results_Adults_TYPE.xlsx
-│       ├── GLMER_Results_Grade3_TYPE.xlsx
-│       ├── GLMER_Results_Grade6_TYPE.xlsx
-│       ├── data_adults_glmer_dummies.xlsx
-│       ├── data_children_grade3_glmer_dummies.xlsx
-│       └── data_children_grade6_glmer_dummies.xlsx
-│
-├── Bayesian/                              ← Bayes Factor analysis (R/brms)
-│   ├── BayesFactor_Adults_TYPE.R
-│   ├── BayesFactor_Children_HK2_TYPE.R
-│   ├── BayesFactor_Results_Adults_TYPE.xlsx
-│   └── BayesFactor_Results_Children_HK2_TYPE.xlsx
-│
-└── MC_simulation/                         ← Monte Carlo simulations (Python)
-    ├── MC_simulation_types/               ← type-frequency baselines
-    │   ├── Simulation_Adults.ipynb
-    │   ├── Simulation_Grades.ipynb
-    │   ├── ForSimulation_Adults.xlsx
-    │   ├── ForSimulation_Grade3.xlsx
-    │   └── ForSimulation_Grade6.xlsx
-    └── MC_simulation_tokens/              ← token-frequency baselines
-        ├── Simulation_Grade3_tokens.ipynb
-        ├── ForSimulation_Adults_With_Tokens.xlsx
-        ├── Simulation_Adults_tokens.pdf
-        ├── Simulation_Adults_tokens.jpg
-        ├── Simulation_Grade3_tokens.pdf
-        ├── Simulation_Grade3_tokens.jpg
-        ├── Simulation_Grade6_tokens.pdf
-        └── Simulation_Grade6_tokens.jpg
-```
+
+    README.md                                   ← this file
+    Experimental_results.xlsx                   ← raw experimental data (all groups)
+
+    Hypothesis_testing_results/                 ← ICC-adjusted proportion tests
+        Adults_tests_with_ICC_FORMULAS_Wilson.xlsx
+        Grade2_tests_with_ICC_FORMULAS_Wilson.xlsx
+        Grade3_tests_with_ICC_FORMULAS_Wilson.xlsx
+        Grade4_tests_with_ICC_FORMULAS_Wilson.xlsx
+        Grade5_tests_with_ICC_FORMULAS_Wilson.xlsx
+        Grade6_tests_with_ICC_FORMULAS_Wilson.xlsx
+
+    GLMER/                                      ← Bayesian and frequentist GLMER
+        ReadMe_GLMER.txt                        ← detailed README for this folder
+        glmer_Py/                               ← Bayesian GLMM (Python/statsmodels)
+            GLM_Bayesian.ipynb
+            GLM_Bayesian_Figures.ipynb
+            GLM_Bayesian_Figures.R
+            GLM_Adults_intercept_probabilities.xlsx
+            GLM_GradeC_intercept_probabilities.xlsx
+            GLM_GradeF_intercept_probabilities.xlsx
+            ForSimulation_Adults_With_Tokens.xlsx
+            ForSimulation_Grade3_with_Tokens.xlsx
+            ForSimulation_Grade6_with_Tokens.xlsx
+            data_adults_glmer_dummies.xlsx
+            data_children_grade3_glmer_dummies.xlsx
+            data_children_grade6_glmer_dummies.xlsx
+        glmer_R/                                ← Frequentist GLMER (R/lme4)
+            GLMER.R
+            GLMER_Results_Adults_TYPE.xlsx
+            GLMER_Results_Grade3_TYPE.xlsx
+            GLMER_Results_Grade6_TYPE.xlsx
+            data_adults_glmer_dummies.xlsx
+            data_children_grade3_glmer_dummies.xlsx
+            data_children_grade6_glmer_dummies.xlsx
+
+    Bayesian/                                   ← Bayes Factor analysis (R/brms)
+        BayesFactor_Adults_TYPE.R
+        BayesFactor_Children_HK2_TYPE.R
+        BayesFactor_Results_Adults_TYPE.xlsx
+        BayesFactor_Results_Children_HK2_TYPE.xlsx
+
+    MC_simulation/                              ← Monte Carlo simulations (Python)
+        MC_simulation_types/                    ← type-frequency baselines
+            Simulation_Adults.ipynb
+            Simulation_Grades.ipynb
+            ForSimulation_Adults.xlsx
+            ForSimulation_Grade3.xlsx
+            ForSimulation_Grade6.xlsx
+        MC_simulation_tokens/                   ← token-frequency baselines
+            Simulation_Grade3_tokens.ipynb
+            ForSimulation_Adults_With_Tokens.xlsx
+            Simulation_Adults_tokens.pdf
+            Simulation_Adults_tokens.jpg
+            Simulation_Grade3_tokens.pdf
+            Simulation_Grade3_tokens.jpg
+            Simulation_Grade6_tokens.pdf
+            Simulation_Grade6_tokens.jpg
 
 ---
 
@@ -101,10 +100,9 @@ Three equivalent calculations are provided side by side for methodological trans
 Lexical baselines are drawn from GreekLex 2 type frequencies (Adults) and HelexKids 2.0 type frequencies (Grades 3 and 6).
 
 | File | Group |
-|------|-------|
-| `Adults_tests_with_ICC_FORMULAS_Wilson.xlsx` | Adults (*N* = 105) |
-| `Grade3_tests_with_ICC_FORMULAS_Wilson.xlsx` | Grade 3 children (*N* = 27) |
-| `Grade6_tests_with_ICC_FORMULAS_Wilson.xlsx` | Grade 6 children (*N* = 17) |
+`Adults_tests_with_ICC_FORMULAS_Wilson.xlsx` | Adults (*N* = 105) |
+`Grade3_tests_with_ICC_FORMULAS_Wilson.xlsx` | Grade 3 children (*N* = 27) |
+`Grade6_tests_with_ICC_FORMULAS_Wilson.xlsx` | Grade 6 children (*N* = 17) |
 
 ---
 
@@ -119,34 +117,30 @@ Fits an intercept-only Bayesian binomial mixed GLM via variational Bayes (Python
 **Input data files** (one per group; dummy-coded for suffix and stress pattern):
 
 | File | Group |
-|------|-------|
-| `data_adults_glmer_dummies.xlsx` | Adults |
-| `data_children_grade3_glmer_dummies.xlsx` | Grade 3 |
-| `data_children_grade6_glmer_dummies.xlsx` | Grade 6 |
+`data_adults_glmer_dummies.xlsx` | Adults |
+`data_children_grade3_glmer_dummies.xlsx` | Grade 3 |
+`data_children_grade6_glmer_dummies.xlsx` | Grade 6 |
 
 **Scripts:**
 
 | Script | Purpose |
-|--------|---------|
-| `GLM_Bayesian.ipynb` | Fits the Bayesian GLMM and exports posterior intercept probabilities |
-| `GLM_Bayesian_Figures.ipynb` | Python figure generation (scatter plots, Figures 3–4) |
-| `GLM_Bayesian_Figures.R` | R figure generation (alternative; same plots) |
+`GLM_Bayesian.ipynb` | Fits the Bayesian GLMM and exports posterior intercept probabilities |
+`GLM_Bayesian_Figures.ipynb` | Python figure generation (scatter plots, Figures 3–4) |
+`GLM_Bayesian_Figures.R` | R figure generation (alternative; same plots) |
 
 **Model output files** (posterior mean intercept probabilities and 95% credible intervals per suffix and stress pattern):
 
 | File | Group |
-|------|-------|
-| `GLM_Adults_intercept_probabilities.xlsx` | Adults |
-| `GLM_GradeC_intercept_probabilities.xlsx` | Grade 3 |
-| `GLM_GradeF_intercept_probabilities.xlsx` | Grade 6 |
+`GLM_Adults_intercept_probabilities.xlsx` | Adults |
+`GLM_GradeC_intercept_probabilities.xlsx` | Grade 3 |
+`GLM_GradeF_intercept_probabilities.xlsx` | Grade 6 |
 
 **Lexical reference files** (type and token frequencies used as reference points in the figures; not used in GLMM estimation):
 
 | File | Group | Sources |
-|------|-------|---------|
-| `ForSimulation_Adults_With_Tokens.xlsx` | Adults | GreekLex 2 (types), HNC Golden (tokens) |
-| `ForSimulation_Grade3_with_Tokens.xlsx` | Grade 3 | HelexKids 2.0 (types and tokens) |
-| `ForSimulation_Grade6_with_Tokens.xlsx` | Grade 6 | HelexKids 2.0 (types and tokens) |
+`ForSimulation_Adults_With_Tokens.xlsx` | Adults | GreekLex 2 (types), HNC Golden (tokens) |
+`ForSimulation_Grade3_with_Tokens.xlsx` | Grade 3 | HelexKids 2.0 (types and tokens) |
+`ForSimulation_Grade6_with_Tokens.xlsx` | Grade 6 | HelexKids 2.0 (types and tokens) |
 
 #### `GLMER/glmer_R/` — Frequentist GLMER (R, secondary verification)
 
@@ -157,16 +151,14 @@ Fits an intercept-only frequentist GLMER with crossed random effects for partici
 **Script:**
 
 | Script | Purpose |
-|--------|---------|
-| `GLMER.R` | Fits the frequentist GLMER and runs Wald z-tests against lexical baselines |
+`GLMER.R` | Fits the frequentist GLMER and runs Wald z-tests against lexical baselines |
 
 **Output files:**
 
 | File | Group |
-|------|-------|
-| `GLMER_Results_Adults_TYPE.xlsx` | Adults |
-| `GLMER_Results_Grade3_TYPE.xlsx` | Grade 3 |
-| `GLMER_Results_Grade6_TYPE.xlsx` | Grade 6 |
+`GLMER_Results_Adults_TYPE.xlsx` | Adults |
+`GLMER_Results_Grade3_TYPE.xlsx` | Grade 3 |
+`GLMER_Results_Grade6_TYPE.xlsx` | Grade 6 |
 
 ---
 
@@ -177,11 +169,10 @@ Contains the R scripts and output spreadsheets for the Bayes Factor analysis rep
 BF₀₁ quantifies evidence for alignment with the lexical baseline (H₀: *p* = *p*₀) relative to departure from it (H₁: *p* ≠ *p*₀), and is interpreted following Lee & Wagenmakers (2014). Values above 1 indicate evidence for lexical alignment; values below 1 indicate evidence for departure. Lexical baselines are drawn from GreekLex 2 type frequencies (Adults) and HelexKids 2.0 type frequencies (children).
 
 | File | Contents |
-|------|----------|
-| `BayesFactor_Adults_TYPE.R` | R script: Bayes Factor computation for adults (GreekLex 2 baseline) |
-| `BayesFactor_Children_HK2_TYPE.R` | R script: Bayes Factor computation for Grade 3 and Grade 6 children (HelexKids 2.0 baseline) |
-| `BayesFactor_Results_Adults_TYPE.xlsx` | BF₀₁ values per suffix and stress pattern — Adults |
-| `BayesFactor_Results_Children_HK2_TYPE.xlsx` | BF₀₁ values per suffix and stress pattern — Grade 3 and Grade 6 |
+`BayesFactor_Adults_TYPE.R` | R script: Bayes Factor computation for adults (GreekLex 2 baseline) |
+`BayesFactor_Children_HK2_TYPE.R` | R script: Bayes Factor computation for Grade 3 and Grade 6 children (HelexKids 2.0 baseline) 
+`BayesFactor_Results_Adults_TYPE.xlsx` | BF₀₁ values per suffix and stress pattern — Adults |
+`BayesFactor_Results_Children_HK2_TYPE.xlsx` | BF₀₁ values per suffix and stress pattern — Grade 3 and Grade 6 |
 
 ---
 
@@ -196,36 +187,33 @@ Two subfolders correspond to the two sets of lexical baselines:
 Baselines: GreekLex 2 type frequencies (Adults); HelexKids 2.0 type frequencies (Grades 3 and 6).
 
 | File | Description |
-|------|-------------|
-| `Simulation_Adults.ipynb` | Monte Carlo simulation for Adults |
-| `Simulation_Grades.ipynb` | Monte Carlo simulation for Grade 3 and Grade 6 |
-| `ForSimulation_Adults.xlsx` | Input: GreekLex 2 type proportions per suffix (Adults) |
-| `ForSimulation_Grade3.xlsx` | Input: HelexKids 2.0 type proportions per suffix (Grade 3) |
-| `ForSimulation_Grade6.xlsx` | Input: HelexKids 2.0 type proportions per suffix (Grade 6) |
+`Simulation_Adults.ipynb` | Monte Carlo simulation for Adults |
+`Simulation_Grades.ipynb` | Monte Carlo simulation for Grade 3 and Grade 6 |
+`ForSimulation_Adults.xlsx` | Input: GreekLex 2 type proportions per suffix (Adults) |
+`ForSimulation_Grade3.xlsx` | Input: HelexKids 2.0 type proportions per suffix (Grade 3) |
+`ForSimulation_Grade6.xlsx` | Input: HelexKids 2.0 type proportions per suffix (Grade 6) |
 
 #### `MC_simulation/MC_simulation_tokens/` — token-frequency baselines (complementary; not reported in the article)
 
 Baselines: HNC Golden Corpus token frequencies (Adults); HelexKids 2.0 token frequencies (Grades 3 and 6). Results were fully consistent with those obtained using type-frequency baselines (see Section 6).
 
 | File | Description |
-|------|-------------|
-| `Simulation_Grade3_tokens.ipynb` | Monte Carlo simulation script (token-frequency baseline; adaptable to all groups) |
-| `ForSimulation_Adults_With_Tokens.xlsx` | Input: HNC Golden token proportions per suffix (Adults) |
-| `Simulation_Adults_tokens.pdf` | Output figure: Adults (Figures 5 variant) |
-| `Simulation_Adults_tokens.jpg` | Output figure: Adults (high-resolution image) |
-| `Simulation_Grade3_tokens.pdf` | Output figure: Grade 3 (Figure 6a variant) |
-| `Simulation_Grade3_tokens.jpg` | Output figure: Grade 3 (high-resolution image) |
-| `Simulation_Grade6_tokens.pdf` | Output figure: Grade 6 (Figure 6b variant) |
-| `Simulation_Grade6_tokens.jpg` | Output figure: Grade 6 (high-resolution image) |
+`Simulation_Grade3_tokens.ipynb` | Monte Carlo simulation script (token-frequency baseline; adaptable to all groups) |
+`ForSimulation_Adults_With_Tokens.xlsx` | Input: HNC Golden token proportions per suffix (Adults) |
+`Simulation_Adults_tokens.pdf` | Output figure: Adults (Figures 5 variant) |
+`Simulation_Adults_tokens.jpg` | Output figure: Adults (high-resolution image) |
+`Simulation_Grade3_tokens.pdf` | Output figure: Grade 3 (Figure 6a variant) |
+`Simulation_Grade3_tokens.jpg` | Output figure: Grade 3 (high-resolution image) |
+`Simulation_Grade6_tokens.pdf` | Output figure: Grade 6 (Figure 6b variant) |
+`Simulation_Grade6_tokens.jpg` | Output figure: Grade 6 (high-resolution image) |
 
 ---
 
 ## Lexical Resources and Abbreviations
 
 | Abbreviation | Full name | Role in analyses |
-|---|---|---|
-| GreekLex 2 | Kyparissiadis et al. (2017) | Adult lexical type-frequency baseline |
-| HNC Golden | Hellenic National Corpus, Golden PoS Corpus (ILSP 2021) | Adult lexical token-frequency reference |
+ GreekLex 2 | Kyparissiadis et al. (2017) | Adult lexical type-frequency baseline |
+HNC Golden | Hellenic National Corpus, Golden PoS Corpus (ILSP 2021) | Adult lexical token-frequency reference |
 | HelexKids 2.0 | Revithiadou et al. (2026) | Children's lexical baseline (types and tokens, Grades 3 and 6) |
 
 Inflection classes: **-aF** (feminine -a), **-iF** (feminine -i), **-iN** (neuter -i), **-isM** (masculine -is), **-maN** (neuter -ma), **-oN** (neuter -o), **-osM** (masculine -os). Stress positions: **APU** = antepenultimate, **PU** = penultimate, **U** = ultimate.
@@ -237,20 +225,6 @@ Inflection classes: **-aF** (feminine -a), **-iF** (feminine -i), **-iN** (neute
 **R** (≥ 4.0): `lme4`, `brms`, `dplyr`, `tidyr`, `ggplot2`, `patchwork`, `readxl`, `writexl`
 
 **Python** (≥ 3.8): `numpy`, `pandas`, `statsmodels`, `scipy`, `matplotlib`, `seaborn`, `openpyxl`
-
----
-
-## Key References
-
-Bates, D., Mächler, M., Bolker, B., & Walker, S. (2015). Fitting linear mixed-effects models using lme4. *Journal of Statistical Software*, 67(1), 1–48.
-
-Bürkner, P.-C. (2017). brms: An R package for Bayesian multilevel models using Stan. *Journal of Statistical Software*, 80(1), 1–28.
-
-Kyparissiadis, A., van Heuven, W. J. B., Pitchford, N. J., & Ledgeway, T. (2017). GreekLex 2: A comprehensive lexical database with part-of-speech, syllabic, phonological, and stress information. *PLoS ONE*, 12(2), e0172493.
-
-Lee, M. D., & Wagenmakers, E.-J. (2014). *Bayesian cognitive modeling: A practical course*. Cambridge University Press.
-
-Revithiadou, A., Terzopoulos, A., Niolaki, G., Markopoulos, G., Avdelidis, K., Mittas, I., & Kosmidis, K. (2026). HelexKids 2.0: A linguistically annotated lexical database building on HelexKids [Manuscript submitted for publication]. Aristotle University of Thessaloniki; Birmingham City University; University of Birmingham; University of the Aegean.
 
 ---
 
