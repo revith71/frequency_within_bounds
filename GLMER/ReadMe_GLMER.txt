@@ -16,10 +16,9 @@ variational Bayes). The script is written for adults and
 run separately for each group by replacing the input file.
 
 | Input | Output |
-|---|---|
-| `data_adults_glmer_dummies.xlsx` | `GLM_Adults_intercept_probabilities.xlsx` |
-| `data_children_grade3_glmer_dummies.xlsx` | `GLM_GradeC_intercept_probabilities.xlsx` |
-| `data_children_grade6_glmer_dummies.xlsx` | `GLM_GradeF_intercept_probabilities.xlsx` |
+`data_adults_glmer_dummies.xlsx` | `GLM_Adults_intercept_probabilities.xlsx` |
+`data_children_grade3_glmer_dummies.xlsx` | `GLM_GradeC_intercept_probabilities.xlsx` |
+`data_children_grade6_glmer_dummies.xlsx` | `GLM_GradeF_intercept_probabilities.xlsx` |
 
 Each output file contains posterior mean intercept
 probabilities and 95% credible intervals (on the
@@ -40,10 +39,9 @@ token frequency from HNC Golden Corpus / HelexKids 2.0)
 used in the figures.
 
 | Input | Output |
-|---|---|
-| `GLM_Adults_intercept_probabilities.xlsx` + `ForSimulation_Adults_With_Tokens.xlsx` | `GLM_Figure_Adults_color.pdf/jpg`, `GLM_Figure_Adults_grayscale.pdf/jpg` |
-| `GLM_GradeC_intercept_probabilities.xlsx` + `ForSimulation_Grade3_with_Tokens.xlsx` | `GLM_Figure_Children_color.pdf/jpg`, `GLM_Figure_Children_grayscale.pdf/jpg` |
-| `GLM_GradeF_intercept_probabilities.xlsx` + `ForSimulation_Grade6_with_Tokens.xlsx` | (combined with Grade 3 above) |
+`GLM_Adults_intercept_probabilities.xlsx` + `ForSimulation_Adults_With_Tokens.xlsx` | `GLM_Figure_Adults_color.pdf/jpg`, `GLM_Figure_Adults_grayscale.pdf/jpg` |
+`GLM_GradeC_intercept_probabilities.xlsx` + `ForSimulation_Grade3_with_Tokens.xlsx` | `GLM_Figure_Children_color.pdf/jpg`, `GLM_Figure_Children_grayscale.pdf/jpg` |
+`GLM_GradeF_intercept_probabilities.xlsx` + `ForSimulation_Grade6_with_Tokens.xlsx` | (combined with Grade 3 above) |
 
 
 ### Step 3 — Frequentist GLMER (R)
@@ -57,10 +55,9 @@ drawn from GreekLex 2 (adults) and HelexKids 2.0
 footnote.
 
 | Input | Output |
-|---|---|
-| `data_adults_glmer_dummies.xlsx` | `GLMER_Results_Adults_TYPE.xlsx` |
-| `data_children_grade3_glmer_dummies.xlsx` | `GLMER_Results_Grade3_TYPE.xlsx` |
-| `data_children_grade6_glmer_dummies.xlsx` | `GLMER_Results_Grade6_TYPE.xlsx` |
+`data_adults_glmer_dummies.xlsx` | `GLMER_Results_Adults_TYPE.xlsx` |
+`data_children_grade3_glmer_dummies.xlsx` | `GLMER_Results_Grade3_TYPE.xlsx` |
+`data_children_grade6_glmer_dummies.xlsx` | `GLMER_Results_Grade6_TYPE.xlsx` |
 
 Important note on GLMER (R): 
 Singular fits (random-effect variance collapsing to
@@ -90,15 +87,3 @@ the paper.The frequentist R GLMER (GLMER.R) serves as a
 secondary verification of the ICC-corrected z-test results 
 and is reported in a footnote.
 
-## Software and dependencies
-
-**R:** lme4, dplyr, tidyr, ggplot2, patchwork, readxl,
-writexl
-**Python:** numpy, pandas, statsmodels, matplotlib,
-seaborn, openpyxl
-
-## References
-
-Bates, D., Mächler, M., Bolker, B., & Walker, S. (2015). 
-Fitting linear mixed-effects models using lme4. *Journal 
-of Statistical Software*, 67(1), 1–48.
